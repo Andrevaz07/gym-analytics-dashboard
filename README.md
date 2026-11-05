@@ -6,6 +6,10 @@ de gestão do ginásio não responde: quantas sócias temos de facto, quanto val
 receita recorrente, quem está prestes a desistir, e quem é preciso contactar esta
 semana.
 
+**[Abrir a demo](https://painel-ginasio-demo.streamlit.app)** — com dados
+fictícios. Se a app estiver parada por falta de visitas, demora um pouco a
+arrancar.
+
 ![Visão geral do painel, sobre os dados fictícios](docs/painel.png)
 
 > **Os dados neste repositório são inteiramente fictícios.** O painel arranca

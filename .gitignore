@@ -1,0 +1,21 @@
+# Ambiente Python
+.venv/
+__pycache__/
+*.pyc
+
+# Segredos
+.env
+
+# Bases de dados. A de demonstração é a excepção: é inteiramente
+# fictícia e vai versionada de propósito, para o painel arrancar num
+# clone novo e no deploy sem precisar de gerar nada primeiro.
+*.sqlite*
+*.db
+!data/ginasio_demo.sqlite
+
+# Ferramentas
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+# Dependências da versão pública. Difere do requirements.txt do repo
+# privado: aqui não há notebooks, portanto sai o jupyter e o ipykernel
+# (árvore de instalação enorme, e o Streamlit Community Cloud reinstala
+# tudo a cada build). Sai também o requests, que já não é importado.
+#
+# Versões fixadas ao intervalo em que o projecto foi testado. Sem isto o
+# deploy resolve o que estiver mais recente no dia, e uma major nova de
+# pandas ou plotly parte o painel sem ninguém ter tocado no código.
+
+streamlit>=1.50,<2
+pandas>=3.0,<4
+numpy>=2.0,<3
+plotly>=6.0,<7
+python-dotenv>=1.0,<2
+
+# Leitura dos .xlsx exportados pelo software de gestão. O painel não
+# precisa dele, mas o pipeline de ingestão sim.
+openpyxl>=3.1,<4
+
+# Para correr os testes (python -m pytest).
+pytest>=8,<10
